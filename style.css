@@ -13,6 +13,7 @@ body{
 .container{
     width:1170px;
     margin:0 auto;
+    color:#AAAAAA;
 }
 .btn{
     background-color: crimson;
@@ -27,6 +28,8 @@ body{
     font-size:20px;
 }
 
+
+
 /* ========================
      navbar style
    ======================== */
@@ -40,6 +43,7 @@ body{
  .logo h1{
      font-size: 30px;
      font-weight: 700;
+     color:black;
    }
    .navbar-link ul{
        display: flex;
@@ -66,17 +70,156 @@ body{
       .bannar-title h1{
           font-size: 60px;
           margin-bottom:20px;
+          color:black;
       }
       .arrow{
           font-size:20px;
           margin-left:25px; 
 
       }
+      .btn:hover .arrow{
+          transform: translateX(10px);
+          transition: transform 1s ease-out;
+      }
  .bannar-details{
           width:500px;
+          color:black;
+          font-size:20px;
 
       }
       .bannar-pic{
           background-image: url(images/Circle\ design.svg);
       }
-      
+      .bannar-pic:hover{
+          transform:rotate(30deg);
+          transition: transform 1s ease-out;
+      }
+      /* ========================
+       Collection style
+      ===================== */
+      main>h1{
+          text-align: center;
+          margin-bottom:50px;
+          margin-top:50px
+      }
+      .collections{
+          margin:0 auto;
+          width:1047px;
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          row-gap:20px;
+          column-gap:20px;
+         align-items: center;
+         background-color: #FFFFFF;
+      }
+      .collection{
+          width:300px;
+          height: 476px;
+          border-radius: 10px;
+          padding:15px 18px;
+          box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+          
+      }
+      .collection img{
+          width: 300px;
+          height: 256px;
+          border-radius: 10px;
+      }
+      .collection h1,h2{
+          margin-bottom:5px;
+      }
+      .collection h1{
+          font-size: 30px;
+      }
+      .collection span{
+          margin-left: 10px;
+      }
+   .collections   .seemore span{
+          position: absolute;
+          right:240px;
+          color:crimson;
+          font-size: 20px;
+      }
+      .filled{
+          color:#FFC014;
+          font-size: 18px;
+      }
+      /* ===================
+          Cotanct form
+          ================== */
+          .contact{
+              width:968px;
+              display: flex;
+              align-items: center;
+              margin-top:100px;
+              margin:0 auto;
+          }
+          .contact-pic img{
+              width:550px; 
+              margin-right:100px ;
+              border-radius: 10px;
+
+          }
+          .contact-form {
+              width:400px;
+              font-size: 20px;
+          }
+          .contact-form input[type=text], input[type=email], textarea{
+              width:100%;
+              padding:10px;
+              font-size: 20px;
+              border: 1px solid #ccc;
+              border-radius: 4px;
+              box-sizing: border-box;
+          }
+          .contact-form input[type=submit]{
+            background-color: crimson;
+            color:#fff;
+            padding:15px 40px;
+            margin-top:30px;
+            font-size: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            box-sizing: border-box;
+            
+          }
+  /* footer section */
+   footer{
+       width: 100%;
+       background-color: black;
+       margin-top:50px;
+       padding:50px;
+   }   
+   .footer-content{
+       width:400px;
+       color:#fff;
+       margin:0 auto;
+       text-align: center;
+   }
+   .footer-content h1, p{
+       margin-bottom:10px;
+       margin-top:10px;
+   }
+   .footer-content ul{
+    display: flex;
+   justify-content: center;
+    margin-top:30px;
+    
+   }
+   .footer-content ul li{
+       list-style: none;
+       margin-right: 20px;
+       background-color: #a3989866;
+       width: 40px;
+       height: 40px;
+       border-radius: 50%;
+   }
+   .footer-content ul li a{
+    text-decoration: none;
+    color:#fff;
+    font-size: 25px;
+   
+   }
+   .footer-content .circle{
+       margin-top:8px;
+   }

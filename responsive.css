@@ -1,0 +1,44 @@
+@media (max-width:768px) {
+    .nav-bar .container{
+        width: 768px;
+        margin:auto;
+    }
+    .navbar-link{
+        display: none;
+    }
+    .bannar{
+        flex-direction: column;
+        align-items: center;
+    }
+    .bannar-title{
+        margin-left: 200px;
+    }
+    .collections{
+        width:768px;
+        grid-template-columns: repeat(2, 1fr);
+        row-gap:10px;
+        column-gap:10px;
+        justify-items: center;
+        margin-left: 150px;
+    }
+    main>h1{
+        margin-left: 315px;
+    }
+    .contact{
+        width:768px;
+        flex-direction: column;
+        align-items: center;
+        margin-top:100px;
+        margin-left: 150px;
+       
+    }
+    .contact .contact-pic{
+        display: none;
+    }
+    .contact-form{
+        margin:auto;
+    }
+    .footer-content{
+        width:100%;
+    }
+}
